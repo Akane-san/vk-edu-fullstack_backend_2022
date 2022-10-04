@@ -72,9 +72,11 @@ class TicTacGame:
 
     def check_winner(self, symbol):
         for n in range(3):
-            if self.check_line(self.board[n][0], self.board[n][1], self.board[n][2], symbol) or self.check_line(self.board[0][n], self.board[1][n], self.board[2][n], symbol):
+            if self.check_line(self.board[n][0], self.board[n][1], self.board[n][2], symbol) \
+            or self.check_line(self.board[0][n], self.board[1][n], self.board[2][n], symbol):
                 return True
-        if self.check_line(self.board[0][0], self.board[1][1], self.board[2][2], symbol) or self.check_line(self.board[2][0], self.board[1][1], self.board[0][2], symbol):
+        if self.check_line(self.board[0][0], self.board[1][1], self.board[2][2], symbol) \
+            or self.check_line(self.board[2][0], self.board[1][1], self.board[0][2], symbol):
             return True
         return False
 
