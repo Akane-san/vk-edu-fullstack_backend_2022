@@ -46,7 +46,9 @@ coverage.xml
 .ropeproject
 
 #virtual env
-.homework_venv
+.homework_venv/*
+homework_venv/
+messenger/application/messenger_venv/
 
 # Django stuff:
 *.log
