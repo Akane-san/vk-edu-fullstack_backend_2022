@@ -49,6 +49,7 @@ coverage.xml
 .homework_venv/*
 homework_venv/
 messenger/application/messenger_venv/
+messenger/application/application/.env
 
 # Django stuff:
 *.log
